@@ -4,7 +4,7 @@
 LOG=writelog.sh
 
 function speak {
-        xterm -e "ponysay -b linux-vt -- \"$MESSAGE\"; $LOG $TAG; $DO"
+        xterm -e "ponysay -b linux-vt -- \"$MESSAGE\"; $DO; $LOG $TAG"
 }
 
 message[0]="Перерыв, иди попей чаю."
